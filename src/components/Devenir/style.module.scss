@@ -1,0 +1,36 @@
+@import "../../sass/main.scss";
+
+a {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+}
+.devenir {
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__button {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    background-color: $glass-bg;
+    color: $white;
+    border: 2px solid white;
+    border-radius: 8px;
+    cursor: pointer !important;
+    width: 30%;
+
+    &:hover {
+      background-color: $glass-bg-2;
+    }
+    &__text {
+      margin: 0 !important;
+      padding: 0 !important;
+      font-size: 18px !important;
+      text-align: center !important;
+    }
+  }
+}

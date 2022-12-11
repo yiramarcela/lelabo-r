@@ -1,0 +1,28 @@
+// custom mixin media query for breakpoints variables
+@mixin use-media-query($value, $direction) {
+  @if $direction == up {
+    @media (min-width: $value) {
+      @content;
+    }
+  } @else if $direction == down {
+    @media (max-width: $value) {
+      @content;
+    }
+  } @else {
+    @error "use-media-query - Invalid direction value";
+  }
+}
+
+@mixin glass-black-card {
+  padding: 15px;
+  background-color: $glass-bg-2;
+  border-radius: 20px;
+}
+
+@mixin flex-box($direction, $alignItems: false) {
+  display: flex;
+  justify-content: $direction;
+  @if $alignItems == true {
+    align-items: $direction;
+  }
+}

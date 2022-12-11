@@ -1,0 +1,90 @@
+.general_button {
+  /* display: flex; */
+  background-color: transparent !important;
+  border: none;
+  color: white;
+  cursor: pointer;
+  height: 100%;
+}
+.generaltext{
+  color: white;
+}
+p {
+  text-align: justify;
+  padding: 2rem;
+}
+a {
+  text-decoration: none;
+}
+h3{
+  color: white;
+}
+
+.App {
+  position: relative;
+  height: 96.8vh;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  /* min-height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.btn_close {
+  background-color: transparent !important;
+  border-color: transparent !important;
+  border: 0;
+  color: white;
+  cursor: pointer;
+  height: 7vh;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  right: 1vw;
+  width: 5vw;
+  z-index: 3;
+}
+
+.icons{
+  color: white;
+}
+.simplebar-track.simplebar-vertical .simplebar-scrollbar:before {
+  content: "";
+  background: white;
+  opacity: 0.5;
+}
+
+textarea{
+  width: 85vw;
+  height: 30vh;
+}
+
+.mediapath{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+.mediapath input{
+  margin: 0.5em;
+  width: 50vw;
+}
+.footer{
+  display: flex;
+  justify-content: center;
+}
+.contactFooter{
+  position: fixed;
+  z-index: 3;
+  width: 100vw;
+  height: auto;
+}

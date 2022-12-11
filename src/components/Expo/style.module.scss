@@ -1,0 +1,71 @@
+@import "../../sass/main.scss";
+
+.event-card {
+  padding: 0;
+  background-size: cover;
+  border: none;
+  cursor: pointer;
+  border-radius: 55px;
+  padding: 0px;
+
+  &__content {
+    backdrop-filter: brightness(0.8);
+    width: 100%;
+    height: 100%;
+    border-radius: 0px 55px;
+
+    &:hover{
+      backdrop-filter: brightness(0.2);
+    }
+
+  }
+
+
+
+
+
+  &__text {
+   
+    text-align: left;
+
+
+
+
+    &__day {
+    
+      padding-left: 5px;
+      text-align: left;
+      font-size: 50px;
+
+      @include use-media-query($lg, down) {
+        font-size: 50px;
+      }
+    }
+
+    &__title {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+      justify-content: flex-start;
+      margin-top: 0%;
+      margin-right: 0%;
+      width: 80%;
+      font-size: 1.5em;
+
+    
+
+      @include use-media-query($lg, down) {
+        font-size: 1.5em;
+      }
+    }
+  }
+}
+
+.blockInfoSuplEvent{
+  
+}
+
+.block2{
+  width:80vw;
+}
+

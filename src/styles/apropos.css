@@ -1,0 +1,41 @@
+.info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-self: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    /*border-radius: 5vh;*/
+    margin-top: 2.5vh;
+    margin-left: 2.5vw;
+    /*padding: 1vh;*/
+    position: absolute;
+    flex-direction: column;
+    justify-items: space-evenly;
+    /*flex-wrap: wrap;*/
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 2em;
+    /*padding: 1vh;*/
+    /*left: 0%;*/
+    /*top: 0%;*/
+    height: 85vh;
+    width: 95%;
+  }
+  .info h1{
+    font-size: 10vh;
+    font-weight: bold;
+    padding: 4vh;
+  }
+  .info p{
+      text-align: justify;
+      font-size: 2em;
+      /* height: 30%; */
+      margin: 2vh;
+      padding: 2vh;
+      overflow: scroll;
+
+  }
+  .info [data-simplebar].simpleContainer {
+    height: 58vh;
+    width: 95vw;
+  }
+  

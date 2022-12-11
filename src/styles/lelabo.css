@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,600&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --bg: #fafafa;
+  --hotpink: #e94057;
+  --orange: #f27121;
+
+  --darkInterface: rgba(0, 0, 0, 0.35);
+  --gradient: linear-gradient(35deg, var(--orange), var(--hotpink));
+}
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0px;
+  padding: 0px;
+  min-height: 100vh;
+  background: var(--bg);
+}
+
+header {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.8);
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: space-around;
+  z-index: 2;
+  width: 100vw;
+}
+
+footer {
+  width: 100vw;
+  height: 3.5vh;
+  align-self: flex-end;
+  justify-self: flex-end;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.8);
+  flex-direction: row;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+h1 {
+  font-family: "Urbanist", sans-serif;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+}
+
+h2 {
+  font-family: "Urbanist", sans-serif;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  font-size: 5.5rem;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+image{
+  object-fit: cover;
+}
+/*.App{
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+
+}*/
+
+.logolabo {
+  background-image: url(../assets/laboIcon.png);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 80%;
+  position: relative;
+  top: 10%;
+  width: 10rem;
+}
+
+#glCanvas {
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+  position: absolute;
+  mix-blend-mode: normal;
+}
+
+.burger {
+  position: relative;
+  right: 0;
+  top: 100%;
+  width: 60px;
+  height: 60px;
+  background: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.burger__patty {
+  position: relative;
+  width: 60%;
+  height: 2px;
+  background: #fff;
+  transition: all 0.45s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.burger__patty:before,
+.burger__patty:after {
+  will-change: transform;
+  content: "";
+  position: absolute;
+  left: 0;
+  background: #fff;
+  height: 2px;
+  width: 100%;
+  transition: all 0.45s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.burger__patty:before {
+  top: -10px;
+}
+.burger__patty:after {
+  top: 10px;
+}
+.burger--close .burger__patty {
+  transform: rotate(45deg);
+}
+.burger--close .burger__patty:before {
+  transform: rotate(-90deg) translate(-9px, 0);
+}
+.burger--close .burger__patty:after {
+  opacity: 0;
+  transform: scaleX(0);
+}
+
+.menu {
+  display: flex;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.menu--close {
+  display: none;
+}
+
+.textButton {
+  cursor: pointer;
+  user-select: none;
+}
+
+.textButton :hover {
+  font-size: 1.5;
+}
+
+.btnlistItem {
+  border-color: transparent;
+  width: 100vw;
+  background-color: transparent !important;
+}
+
+.listItem {
+  width: 100vw;
+}
+.listItem :hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.sectiontitle {
+  align-self: center;
+  display: flex;
+  align-content: center;
+  align-self: center;
+  flex-wrap: wrap;
+  font-size: 25px;
+  position: relative;
+  left: 0;
+  font-family: urbanist;
+  cursor: default;
+  display: none;
+
+}
+
+.searchItem {
+  position: sticky;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: rgba(255, 255, 255, 0);
+  border: 0px solid rgb(255, 255, 255);
+  height: 5vh;
+  width: 30vw;
+  top: 1.5vh;
+  left: 65vw;
+}
+.searchItem input[type="text"] {
+  background-color: transparent !important;
+  border-color: transparent !important;
+  height: 4.5vh;
+  width: 95%;
+  outline: none !important;
+  color: rgb(255, 255, 255) !important;
+  font-size: 3vh;
+  text-align: right;
+  font-family: Urbanist;
+}
+
+.searchItem:hover {
+  background-color: rgba(150, 150, 150, 0.5);
+}
+.icon {
+  position: relative;
+  color: #ccc;
+}
+
+.aLaUne{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 85vh;
+  align-items: center;
+
+}
+
+
+.slogan{
+   background-color: rgba(0, 0, 0, 0.8);
+   border-radius: 18px;
+}
+
+.sloganText{
+  color: #fff;
+  font-size: 2em;
+  cursor: default;
+}
+
+
+.sectionList{
+   display: flex;
+   flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  overflow: scroll;
+  width: 100vw;
+  height: 90vh;
+}
+
+.Bg{
+  height: 100vh;
+  width: 100vw;
+  z-index: -3;
+  position: absolute;
+  /*background-color: blue;*/
+  color: blue;
+}

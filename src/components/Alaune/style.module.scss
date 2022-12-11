@@ -1,0 +1,15 @@
+@import "../../sass/main.scss";
+
+.salon-card {
+  @include flex-box(center);
+  &__description {
+    a {
+      color: $soft-anchor-color;
+      text-decoration: underline;
+    }
+    li {
+      font-size: 20px;
+      color: $white;
+    }
+  }
+}

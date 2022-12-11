@@ -1,0 +1,77 @@
+.simplebar-scrollbar.simplebar-visible:before {
+  background-color: white;
+}
+
+[data-simplebar].simpleContainer {
+  display: flex;
+  height: 80vh;
+  flex-direction: column;
+  /*margin-left: vw;*/
+  
+}
+
+
+.titleMembre {
+  font-size: 5em;
+}
+.container__usrcad__detail {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 2em;
+  bottom: 5%;
+  height: 87vh;
+  left: 5%;
+  margin: 0;
+  padding: 0em;
+  right: 5%;
+  position: absolute;
+  top: 9.5%;
+  width: 90svw;
+  overflow: hidden;
+
+}
+
+.usrcard {
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  border-color: transparent !important;
+  border-radius: 5%;
+  justify-content: center;
+  margin: 1em;
+  padding: 1em;
+  width: 30vw;
+}
+
+.usrcard__body h2 {
+  font-size: 2em;
+  margin: 0;
+}
+
+.usrcard__body h3 {
+  font-size: 2em;
+}
+
+.usrcard__picture {
+  height: 25vh;
+  width: auto;
+  border-radius: 8px;
+}
+.usrcard__picture__detail {
+  object-fit: contain;
+  transform: scale(0.8);
+  border-radius: 18px;
+  height: 55vh;
+  width: auto;
+}
+.container__usrcad__detail h2{
+  font-size: 3em;
+}
+
+.container__usrcad__detail h3{
+  font-size: 3em;
+}
+
+.articleText{
+  text-align: justify;
+}
+

@@ -1,0 +1,59 @@
+
+/*devenir elements*/
+.form{
+  display: flex;
+}
+.devenir_prevImg {
+  border: lightgrey 1px solid;
+  background-image: url("../assets/imageIcon.png");
+  background-size: cover;
+  height: 30vh;
+  width: 20vw;
+}
+
+.principal {
+  display: flex;
+  height: 91vh !important;
+  justify-content: center;
+}
+.container_form {
+  display: flex;
+  height: 37vh;
+  margin: 7vh 2vw 0 2vw;
+  width: 90vw;
+}
+
+.mediaContainer p {
+  padding: 1rem;
+}
+
+.mediaContainer input[type="checkbox"] {
+  margin-top: .5%;
+}
+.mediaContainer input[type="text"] {
+  width: 45%;
+}
+.mediaContainer label {
+  color: #ccc;
+  font-size: 1em;
+  font-weight: bold;
+  padding-left: 1vw;
+  width: 15%;  
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.custom-file-upload {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  display: inline-block;
+  padding: 0.5em 1em;
+  cursor: pointer;
+}
+.formDescription {
+  width: 60vw;
+  height: 30vh;
+}

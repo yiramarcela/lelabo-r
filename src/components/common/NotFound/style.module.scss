@@ -1,0 +1,12 @@
+@import "../../../sass/main.scss";
+
+.root {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  @include glass-black-card;
+}
